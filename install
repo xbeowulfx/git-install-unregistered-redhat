@@ -27,3 +27,8 @@ and setup the exact same directory structure and extract the file using tar
 after doing all and following the same exact structure you can type the below CMD in terminal to use git
 
 /home/git-source/git/executable/bin/git --help
+
+
+
+[xxxxxxxxx]
+env GZIP=-9 #is used to compress teh file to max level
