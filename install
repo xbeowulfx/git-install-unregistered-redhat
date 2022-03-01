@@ -32,3 +32,7 @@ after doing all and following the same exact structure you can type the below CM
 
 [xxxxxxxxx]
 env GZIP=-9 #is used to compress teh file to max level
+if you found dns resolution error you can try adding alternative ns in your config
+
+echo "nameserver 1.1.1.1" >> /etc/resolve.conf
+echo "nameserver 8.8.8.8" >> /etc/resolve.conf
