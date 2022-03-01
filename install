@@ -22,7 +22,7 @@ cd /home/git-source/
 env GZIP=-9 tar cvzf git.tar.gz git/
 
 [~] Instruction
-now move git.tar.gz to Unregisterd Server 
+now move git.tar.gz to Unregisterd REDHAT Server 
 and setup the exact same directory structure and extract the file using tar 
 after doing all and following the same exact structure you can type the below CMD in terminal to use git
 
