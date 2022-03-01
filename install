@@ -1,0 +1,29 @@
+Important Note : You should strictly follow same directory Structure on both servers on which you compile the code and the unregistered RedHat Server
+
+[~] Compile git from source on centos 7
+
+mkdir -p /home/git-source/
+cd /home/git-source/
+wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.18.0.tar.gz
+mkdir -p /home/git-source/
+tar xf git-2.18.0.tar.gz
+mv git-2.18.0/ git
+cd git
+
+[~] Install the dependencies
+
+yum groupinstall 'Development Tools'
+yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel perl-CPAN perl-devel
+make
+./configure --prefix=/home/git-source/git/executable/
+make all
+make install
+cd /home/git-source/
+env GZIP=-9 tar cvzf git.tar.gz git/
+
+[~] Instruction
+now move git.tar.gz to Unregisterd Server 
+and setup the exact same directory structure and extract the file using tar 
+after doing all and following the same exact structure you can type the below CMD in terminal to use git
+
+/home/git-source/git/executable/bin/git --help
