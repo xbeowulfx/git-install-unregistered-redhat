@@ -28,6 +28,10 @@ after doing all and following the same exact structure you can type the below CM
 
 /home/git-source/git/executable/bin/git --help
 
+ln -s /home/git-source/git/executable/bin/git /bin/git
+
+git --help
+
 
 
 [xxxxxxxxx]
